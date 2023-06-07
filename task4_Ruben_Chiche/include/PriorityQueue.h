@@ -17,6 +17,7 @@ public:
 
 private:
 // add relevant data members
+	std::list<int> _myData;
 };
 
 

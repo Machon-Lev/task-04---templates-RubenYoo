@@ -3,6 +3,16 @@
 void PriorityQueue::push(const int& t)
 {
 
+	MyComparator compare;
+
+	for (auto it = _myData.begin(); it != _myData.end(); it++)
+		if (compare.operator()(t, *it) < 0) {
+			_myData.insert(it, t);
+			return;
+		}
+	
+
+	_myData.emplace_back(t);
 }
 
 int PriorityQueue::poll()

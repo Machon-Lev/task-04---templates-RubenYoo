@@ -23,7 +23,7 @@ int main()
 		pq.push(Dog(5, 12, "Dog04"));
 		*/
 
-		PriorityQueue pq;
+		PriorityQueue<int> pq;
 
 		pq.push(13);
 		pq.push(11);
@@ -59,7 +59,7 @@ int main()
 		pq.push(2.5);
 		*/
 
-		PriorityQueue pq;
+		PriorityQueue<int> pq;
 		pq.push(2);
 		pq.push(1);
 		pq.push(2);

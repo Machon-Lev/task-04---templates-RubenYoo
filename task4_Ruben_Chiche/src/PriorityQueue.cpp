@@ -7,5 +7,11 @@ void PriorityQueue::push(const int& t)
 
 int PriorityQueue::poll()
 {
-	return 0;
+	if (_myData.empty())
+		throw std::out_of_range("PriorityQueue empty !");
+
+	int lastElement = _myData.front();
+	_myData.pop_front();
+
+	return lastElement;
 }

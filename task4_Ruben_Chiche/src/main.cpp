@@ -13,7 +13,6 @@ int main()
 	std::cout << "Hello PriorityQueue.h" << std::endl;
 
 	{
-		/*
 		PriorityQueue<Dog> pq;
 
 		pq.push(Dog(1, 13, "Dog03"));
@@ -21,15 +20,7 @@ int main()
 		pq.push(Dog(3, 14, "Dog02"));
 		pq.push(Dog(4, 15, "Dog01"));
 		pq.push(Dog(5, 12, "Dog04"));
-		*/
-
-		PriorityQueue<int> pq;
-
-		pq.push(13);
-		pq.push(11);
-		pq.push(14);
-		pq.push(15);
-		pq.push(12);
+	
 
 		try
 		{
@@ -49,7 +40,7 @@ int main()
 
 	cout << endl << endl; 
 	{
-		/*
+		
 		PriorityQueue<float> pq;
 
 		pq.push(2.3);
@@ -57,14 +48,7 @@ int main()
 		pq.push(2.2);
 		pq.push(6.1);
 		pq.push(2.5);
-		*/
-
-		PriorityQueue<int> pq;
-		pq.push(2);
-		pq.push(1);
-		pq.push(2);
-		pq.push(6);
-		pq.push(2);
+		
 
 		try
 		{

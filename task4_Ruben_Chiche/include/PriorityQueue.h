@@ -17,12 +17,12 @@ public:
 	T poll();
 
 private:
-	std::list<int> _myData;
+	std::list<T> _myData;
 };
 
 template <typename T>
 struct MyComparator {
-	int operator()(T a, T b) const {
+	T operator()(T a, T b) const {
 		return a - b;
 	}
 };
@@ -31,7 +31,7 @@ template <typename T>
 void PriorityQueue<T>::push(const T& t)
 {
 
-	MyComparator<int> compare;
+	MyComparator<T> compare;
 
 	for (auto it = _myData.begin(); it != _myData.end(); it++)
 		if (compare.operator()(t, *it) < 0) {

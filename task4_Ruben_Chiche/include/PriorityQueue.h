@@ -4,6 +4,7 @@
 #include <list>
 #include <exception>
 
+struct MyComparator;
 
 // any templates?
 class PriorityQueue {
@@ -16,4 +17,11 @@ public:
 
 private:
 // add relevant data members
+};
+
+
+struct MyComparator {
+	int operator()(int a, int b) const {
+		return a - b;
+	}
 };

@@ -3,7 +3,7 @@
 void PriorityQueue::push(const int& t)
 {
 
-	MyComparator compare;
+	MyComparator<int> compare;
 
 	for (auto it = _myData.begin(); it != _myData.end(); it++)
 		if (compare.operator()(t, *it) < 0) {

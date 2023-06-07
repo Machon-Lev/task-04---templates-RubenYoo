@@ -4,6 +4,7 @@
 #include <list>
 #include <exception>
 
+template <typename T>
 struct MyComparator;
 
 // any templates?
@@ -20,9 +21,9 @@ private:
 	std::list<int> _myData;
 };
 
-
+template <typename T>
 struct MyComparator {
-	int operator()(int a, int b) const {
+	int operator()(T a, T b) const {
 		return a - b;
 	}
 };

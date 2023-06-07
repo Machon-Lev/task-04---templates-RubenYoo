@@ -7,12 +7,12 @@
 template <typename T>
 struct MyComparator;
 
-
+// A template priority queue class
 template <typename T>
 class PriorityQueue {
    
 public:
-	
+	// methods
 	void push(const T& t); 
 	T poll();
 
@@ -20,6 +20,8 @@ private:
 	std::list<T> _myData;
 };
 
+
+// A struct to compare two object
 template <typename T>
 struct MyComparator {
 	T operator()(T a, T b) const {
@@ -27,6 +29,7 @@ struct MyComparator {
 	}
 };
 
+// putting the T object in the right place
 template <typename T>
 void PriorityQueue<T>::push(const T& t)
 {
@@ -42,6 +45,7 @@ void PriorityQueue<T>::push(const T& t)
 	_myData.emplace_back(t);
 }
 
+// extract the first object of the list (the min object)
 template <typename T>
 T PriorityQueue<T>::poll()
 {
